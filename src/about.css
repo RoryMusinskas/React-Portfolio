@@ -1,0 +1,60 @@
+#about {
+  background: #000524;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#about a, #about a:visited  { color: #fff; }
+#about a:hover, #about a:focus { color: #0762f9; }
+
+#about h2 {
+  font: 22px/30px 'opensans-bold', sans-serif;
+  color: #fff;
+  margin-bottom: 12px;
+}
+#about p {
+  line-height: 30px;
+  color: #ccc;
+}
+#about .profile-pic {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+#about .download {
+  padding-top: 6px;
+}
+#about .download .button {
+  background: #444;
+  padding: 15px 32px;
+}
+#about .download .button:hover {
+  background: #fff;
+  color: #2B2B2B;
+}
+#about .download .button i {
+  font-size: 20px;
+}
+
+.hobbies{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.hobbies h2{
+  display: block;
+  width: 100%;
+}
+
+#hobby-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
