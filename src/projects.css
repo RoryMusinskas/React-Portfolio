@@ -1,0 +1,21 @@
+#projects{
+  background-color: #ebeeee;
+}
+.projects-wrapper{
+  padding: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  max-width: 2000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#projects-heading{
+  display: block;
+  width: 100%;
+}
+.project-image{
+  width: 350px;
+  height: 350px;
+}

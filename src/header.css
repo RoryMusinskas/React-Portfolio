@@ -1,0 +1,128 @@
+/* setting the width and min-height for the header and making it flex */
+.main-header {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 20vh;
+}
+
+/* setting and aligning the header text for mobile view */
+#header-text {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 80%;
+  font-size: 72px;
+  color: white;
+}
+
+/* aligning the main nav element and spacing */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+/* setting main nav color and style */
+.main-nav > a {
+  color: white;
+  text-decoration: none;
+}
+/* media query for tablet */
+/* @media only screen and (min-width: 768px) {
+  .main-header {
+    min-height: 20vh;
+    padding: 0px;
+  }
+} */
+
+/* media query for 1000px */
+@media only screen and (min-width: 1000px) {
+  /* set the grid area, size and center items, add background */
+  .main-header{
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+  }
+  /* aligning nav elements */
+  .main-nav {
+    position: fixed;
+    z-index: 100;
+    width: 70%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  /* hiding the header text as it is in aside at this size */
+  #header-text {
+    display: none;
+  }
+  
+  .banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* vertically center banner section */
+  /* .main-header:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  .main-header .banner {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 85%;
+    padding-bottom: 30px;
+    text-align: center;
+  }*/
+
+  .main-header .banner-text { width: 100%; }
+  .main-header .banner-text h1 {
+    font-size: 90px;
+    color: #fff;
+    letter-spacing: -2px;
+    margin: 0 auto 18px auto;
+  }
+  .main-header .banner-text h3 {
+    font: 18px/1.9em 'librebaskerville-regular', serif;
+    color: #ddd;
+    margin: 0 auto;
+    width: 70%;
+  }
+  .main-header .banner-text h3 span,
+  .main-header .banner-text h3 a {
+    color: #fff;
+  }
+  .main-header .banner-text hr {
+    width: 60%;
+    margin: 18px auto 24px auto;
+    border-color: #2F2D2E;
+    border-color: rgba(150, 150, 150, .1);
+  } 
+
+  /* header social links */
+   .main-header .social {
+    margin: 24px 0;
+    padding: 0;
+    font-size: 30px;
+  }
+  .main-header .social li {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0; 
+  }
+ } 

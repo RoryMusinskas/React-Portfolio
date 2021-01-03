@@ -1,0 +1,44 @@
+#contact{
+  background-color: #191919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#contact-me{
+  color: white;
+  width: 100%;
+}
+.input-wrapper{
+  display: flex;
+  justify-content: center;
+}
+.input-wrapper label{
+  color: white;
+  padding: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100px;
+}
+.input-wrapper input, textarea{
+  width: 90%;
+  padding: 20px;
+  margin: 20px;
+  background-color: #373233;
+  color: white;
+  border: none;
+  resize: none;
+}
+
+#submit{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  background: #0D0D0D;
+  border: none;
+  cursor: pointer;
+  height: auto;
+  padding: 20px;
+  margin-right: 46%;
+  margin-bottom: 5vh;
+}
