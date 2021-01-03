@@ -1,0 +1,25 @@
+#footer{
+  height: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#to-top{
+  width: 100%;
+}
+#up-arrow{
+  color: #525252;
+}
+
+#up-arrow:hover{
+  color: darkcyan;
+}
+.footer-fab{
+  color: #525252;
+  padding: 20px 30px;
+}
+
+.footer-fab:hover{
+  color: white;
+}
