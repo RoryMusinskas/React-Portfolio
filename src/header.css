@@ -1,5 +1,5 @@
 /* setting the width and min-height for the header and making it flex */
-.main-header {
+#header {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -22,9 +22,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  margin-bottom: 0px;
   font-size: 20px;
+  background-color: #2F2D2E;
 }
 
 /* setting main nav color and style */
@@ -33,81 +32,63 @@
   text-decoration: none;
 }
 /* media query for tablet */
-/* @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .main-header {
     min-height: 20vh;
     padding: 0px;
   }
-} */
+}
 
 /* media query for 1000px */
 @media only screen and (min-width: 1000px) {
   /* set the grid area, size and center items, add background */
-  .main-header{
+  #header{
     position: relative;
     height: 100vh;
     min-height: 500px;
     width: 100%;
     text-align: center;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   /* aligning nav elements */
   .main-nav {
     position: fixed;
     z-index: 100;
-    width: 70%;
-    margin-top: 20px;
+  height: 50px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-  }
-  
-  
-  /* hiding the header text as it is in aside at this size */
-  #header-text {
-    display: none;
   }
   
   .banner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   
-  /* vertically center banner section */
-  /* .main-header:before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
+  #header .banner-text { 
+    width: 100%;
   }
-  .main-header .banner {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 auto;
-    width: 85%;
-    padding-bottom: 30px;
-    text-align: center;
-  }*/
-
-  .main-header .banner-text { width: 100%; }
-  .main-header .banner-text h1 {
+  #header .banner-text h1 {
     font-size: 90px;
     color: #fff;
     letter-spacing: -2px;
     margin: 0 auto 18px auto;
   }
-  .main-header .banner-text h3 {
+  #header .banner-text h3 {
     font: 18px/1.9em 'librebaskerville-regular', serif;
     color: #ddd;
     margin: 0 auto;
     width: 70%;
   }
-  .main-header .banner-text h3 span,
-  .main-header .banner-text h3 a {
+  #header .banner-text h3 span,
+  #header .banner-text h3 a {
     color: #fff;
   }
-  .main-header .banner-text hr {
+  #header .banner-text hr {
     width: 60%;
     margin: 18px auto 24px auto;
     border-color: #2F2D2E;
@@ -115,14 +96,26 @@
   } 
 
   /* header social links */
-   .main-header .social {
+   #header .social {
     margin: 24px 0;
     padding: 0;
     font-size: 30px;
   }
-  .main-header .social li {
+  #header .social li {
     display: inline-block;
     margin: 0 15px;
     padding: 0; 
+  }
+  #to-about{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  #to-about a{
+    color: white;
+  }
+  #to-about a:hover{
+    color:teal;
   }
  } 
