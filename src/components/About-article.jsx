@@ -1,6 +1,6 @@
 import React from "react";
-import '../about.css'
-import image from '../Portfolio.jpg'
+import "../stylesheets/about.css";
+import image from "../Portfolio.jpg";
 
 const AboutArticle = () => {
   return (
@@ -17,17 +17,25 @@ const AboutArticle = () => {
             Coder Academy in Melbourne. I will be learning HTML, CSS, Ruby,
             Rails and the MERN stack.
           </p>
-          <div className='hobbies'>
-            <h2>Hobbies</h2>
+          <div className="hobbies">
+            <h2>Hobbies & Interests</h2>
             <ul id="hobby-list">
-              <li>blah</li>
-              <li>blah</li>
-              <li>blah</li>
+              <li>Fire-fighting</li>
+              <li>Kite-boarding</li>
+              <li>Camping</li>
+              <li>Hiking</li>
             </ul>
           </div>
           <div className="row download">
             <p>
-              <a href={""} className="button">
+              <a
+                href={
+                  "https://drive.google.com/file/d/1asWCuamdyeveuia0bAjxUJLnHsdCF2KR/view?usp=sharing"
+                }
+                className="button"
+                target="_blank"
+                download
+              >
                 <i className="fa fa-download"></i>Download Resume
               </a>
             </p>
