@@ -1,5 +1,5 @@
 import React from "react";
-import "../contact.css";
+import "../stylesheets/contact.css";
 
 export default class MyForm extends React.Component {
   constructor(props) {
@@ -33,48 +33,50 @@ export default class MyForm extends React.Component {
     const { status } = this.state;
     return (
       <section id="contact">
-      <div id='contact-me'>
-      <h1>Feel free to get in touch</h1>
-
-      </div>
+        <div id="contact-me">
+          <h1>Feel free to get in touch</h1>
+        </div>
         <form
           id="contact-form"
           onSubmit={this.submitForm}
           action="https://formspree.io/f/mbjppvnn"
           method="POST"
         >
-          <div className='input-wrapper'>
-            <label htmlFor="name">Name</label>
+          <div className="input-wrapper">
+            <label htmlFor="name">Name *</label>
             <input
               type="text"
               name="name"
               id="name"
               value={this.state.name}
               onChange={this.onInputChange}
+              required
             />
           </div>
-          <div className='input-wrapper'>
-            <label htmlFor="email">Email</label>
+          <div className="input-wrapper">
+            <label htmlFor="email">Email *</label>
             <input
               type="email"
               name="email"
               id="email"
               value={this.state.email}
               onChange={this.onInputChange}
+              required
             />
           </div>
-          <div className='input-wrapper'>
-            <label htmlFor="subject">Subject</label>
+          <div className="input-wrapper">
+            <label htmlFor="subject">Subject *</label>
             <input
               type="text"
               name="subject"
               id="subject"
               value={this.state.subject}
               onChange={this.onInputChange}
+              required
             />
           </div>
-          <div className='input-wrapper'>
-            <label htmlFor="message">Message</label>
+          <div className="input-wrapper">
+            <label htmlFor="message">Message *</label>
             <textarea
               name="message"
               id="message"
@@ -82,9 +84,14 @@ export default class MyForm extends React.Component {
               rows="15"
               value={this.state.message}
               onChange={this.onInputChange}
+              required
             ></textarea>
           </div>
-          {status === "SUCCESS" ? <p>Thanks!</p> : <button id='submit'>Submit</button>}
+          {status === "SUCCESS" ? (
+            <p>Thanks!</p>
+          ) : (
+            <button id="submit">Submit</button>
+          )}
           {status === "ERROR" && <p>Ooops! There was an error.</p>}
         </form>
       </section>
