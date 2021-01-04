@@ -1,6 +1,4 @@
-import logo from "./logo.svg";
 import "./stylesheets/App.css";
-import { render } from "@testing-library/react";
 import Header from "./components/Header";
 import AboutArticle from "./components/About-article";
 import Skills from "./components/Skills";
