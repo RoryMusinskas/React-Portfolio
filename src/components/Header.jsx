@@ -7,7 +7,7 @@ import "../stylesheets/header.css";
 const Header = () => {
   return (
     <>
-      <ParticlesBg type="fountain" bg={true} />
+      <ParticlesBg type="fountain" num={2} bg={true} />
       <header id="header">
         <Navbar />
         <div className="row banner">
