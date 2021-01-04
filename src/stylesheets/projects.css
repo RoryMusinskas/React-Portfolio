@@ -26,9 +26,35 @@
   object-fit: cover;
 }
 
-/* Hide the overlay for mobile */
+/* Styling the overlay which displays text over each project on hover */
 .overlay {
-  display: none;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.overlay ul {
+  text-align: left;
+  list-style-type: square;
+  margin: 0;
+  padding: 0;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper:hover .project-image {
+  opacity: 0.3;
+}
+
+.image-wrapper:hover .overlay {
+  opacity: 1;
 }
 
 /*-----------------------------------------------------IMAGE MEDIA QUERY-----------------------------------------------------------------------*/
@@ -57,36 +83,5 @@
     display: block;
     transition: 0.5s ease;
     backface-visibility: hidden;
-  }
-
-  /* Styling the overlay which displays text over each project on hover */
-  .overlay {
-    transition: 0.5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: left;
-  }
-
-  .overlay ul {
-    text-align: left;
-    list-style-type: square;
-    margin: 0;
-    padding: 0;
-  }
-
-  .image-wrapper {
-    position: relative;
-  }
-
-  .image-wrapper:hover .project-image {
-    opacity: 0.3;
-  }
-
-  .image-wrapper:hover .overlay {
-    opacity: 1;
   }
 }
