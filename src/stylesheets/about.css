@@ -1,0 +1,109 @@
+/* Styling of the about container */
+#about {
+  background: #000524;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 50px;
+  text-align: left;
+}
+
+/* Styling the links */
+#about a,
+#about a:visited {
+  color: #fff;
+}
+#about a:hover,
+#about a:focus {
+  color: #0762f9;
+}
+
+/* Styling the h2 and p tags */
+#about h2 {
+  color: #fff;
+  margin-bottom: 12px;
+  text-decoration: underline;
+}
+#about p {
+  line-height: 30px;
+  color: #ccc;
+}
+
+/* Hide profile pic on phone */
+#about .profile-pic {
+  display: none;
+}
+
+/* Styling button for resume */
+#about .download {
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+}
+#about .download .button {
+  background: #444;
+  padding: 15px 32px;
+}
+#about .download .button:hover {
+  background: #fff;
+  color: #2b2b2b;
+}
+#about .download .button i {
+  font-size: 20px;
+}
+
+.button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styling of hobby list */
+#hobby-list {
+  padding: 0;
+  list-style: none;
+  line-height: 30px;
+}
+
+/*-----------------------------------------------------COMPUTER MEDIA QUERY---------------------------------------------------------------------*/
+@media only screen and (min-width: 1000px) {
+  #about {
+    text-align: center;
+  }
+
+  /* Display and style the profile pic for computer */
+  #about .profile-pic {
+    display: unset;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+  }
+
+  /* Set max width of the row container */
+  .row {
+    max-width: 1500px;
+  }
+
+  /* Styling of the hobbies section */
+  .hobbies {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hobbies h2 {
+    display: block;
+    width: 100%;
+  }
+
+  #hobby-list {
+    list-style: unset;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+}

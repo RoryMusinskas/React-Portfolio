@@ -1,0 +1,143 @@
+/* setting the width and min-height for the header and making it flex */
+#header {
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* aligning the main nav element and spacing */
+.main-nav {
+  padding: 15px;
+  width: 100%;
+}
+
+/* Styling of the nav list */
+.nav-ul {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-ul.show {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav-ul li a {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hamburger menu styling */
+.hamburger {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+/* Setting the banner container and text properties */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.banner-text {
+  width: 90%;
+}
+
+/* Github logo to white */
+#github {
+  color: white;
+}
+
+/* Changing the values of the down arrow button in header */
+#to-about {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+#to-about a {
+  color: white;
+}
+#to-about a:hover {
+  color: teal;
+}
+
+/*-----------------------------------------------------COMPUTER MEDIA QUERY---------------------------------------------------------------------*/
+/* media query for 1000px */
+@media only screen and (min-width: 1000px) {
+  /* Setting values for the main nav */
+  .main-nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2f2d2e;
+    height: 50px;
+    width: 100%;
+  }
+
+  .nav-ul {
+    display: flex;
+  }
+
+  /* Hide the hamburger menu */
+  .hamburger {
+    display: none;
+  }
+
+  /* Setting the values for the header, which is the overall container */
+  #header {
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Setting properties for banner-text in the header */
+  #header .banner-text {
+    width: 100%;
+  }
+  #header .banner-text h1 {
+    font-size: 90px;
+    color: #fff;
+    letter-spacing: -2px;
+    margin: 0 auto 18px auto;
+  }
+  #header .banner-text h3 {
+    color: #ddd;
+    margin: 0 auto;
+    width: 70%;
+  }
+  #header .banner-text hr {
+    width: 60%;
+    margin: 18px auto 24px auto;
+    border-color: #808080;
+  }
+
+  /* Setting props for the github logo in the header */
+  #github {
+    font-size: 30px;
+  }
+}

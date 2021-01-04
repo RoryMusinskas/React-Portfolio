@@ -1,0 +1,119 @@
+/* Setting the overall wrapper */
+.skills-wrapper {
+  background-color: white;
+}
+/* Setting props for the containers to hold skills */
+.grid-container,
+.grid-container-single {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styling the header for each section */
+.section-header {
+  text-decoration: underline;
+  text-decoration-color: #0762f9;
+  text-decoration-thickness: 5px;
+}
+
+/* Styling the skills list */
+.skills-list {
+  text-align: left;
+  font-size: 18px;
+  overflow-wrap: break-word;
+}
+.skills-list li {
+  padding-bottom: 10px;
+}
+
+.title {
+  width: 100%;
+}
+
+/* Styling the skills icons from Font Awesome */
+#skills-icons {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#skills-icons p {
+  padding: 0;
+  margin: 0;
+}
+.fab {
+  padding: 10px 10px;
+}
+.fas {
+  padding: 10px 10px;
+}
+
+/*-----------------------------------------------------COMPUTER MEDIA QUERY---------------------------------------------------------------------*/
+@media only screen and (min-width: 1000px) {
+  /* Setting props for the containers to hold skills */
+  .grid-container,
+  .grid-container-single {
+    display: grid;
+    max-width: 1500px;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 0px 0px;
+    background-color: white;
+  }
+
+  /* Setting the grid areas for each skill */
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "title first-item"
+      "title second-item";
+  }
+  .grid-container-single {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "title first-item";
+  }
+
+  .title {
+    grid-area: title;
+  }
+
+  .first-item {
+    grid-area: first-item;
+  }
+
+  .second-item {
+    grid-area: second-item;
+  }
+
+  /* Styling the header for each section */
+  .section-header {
+    text-align: left;
+  }
+
+  /* Styling the skills list */
+  .skills-list {
+    text-align: left;
+  }
+  .skills-list li {
+    padding-bottom: 10px;
+  }
+
+  /* Styling the skills icons from Font Awesome */
+  #skills-icons {
+    list-style: none;
+  }
+  .fab {
+    padding: 10px 10px;
+  }
+  .fas {
+    padding: 10px 10px;
+  }
+}

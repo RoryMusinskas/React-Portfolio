@@ -1,0 +1,81 @@
+/* Styling the overall container */
+#contact {
+  background-color: #191919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#contact-me {
+  color: white;
+  width: 100%;
+}
+#contact-form {
+  width: 90%;
+}
+
+/* Styling each input and label for the contact form */
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.input-wrapper label {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+}
+.input-wrapper input,
+textarea {
+  width: 100%;
+  padding: 20px;
+  background-color: #373233;
+  color: white;
+  border: none;
+  resize: none;
+}
+
+/* Styling the submit button */
+#submit {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  background: #0d0d0d;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/*-----------------------------------------------------COMPUTER MEDIA QUERY---------------------------------------------------------------------*/
+@media only screen and (min-width: 1000px) {
+  /* Styling each input and label for the contact form */
+  #contact-form {
+    max-width: 1500px;
+  }
+  .input-wrapper {
+    flex-wrap: unset;
+  }
+  .input-wrapper label {
+    width: 150px;
+  }
+  .input-wrapper input,
+  textarea {
+    width: 90%;
+    margin: 20px;
+  }
+
+  /* Styling the submit button */
+  #submit {
+    width: unset;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5vh;
+  }
+}

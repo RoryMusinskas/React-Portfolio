@@ -1,0 +1,31 @@
+/* Styling of the footer container */
+#footer {
+  height: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling of button to go back to top of page */
+#to-top {
+  width: 100%;
+}
+#up-arrow {
+  color: #525252;
+}
+
+#up-arrow:hover {
+  color: darkcyan;
+}
+
+/* Styling of the footer Font Awesome icons */
+.footer-fab {
+  color: #525252;
+  padding: 20px 30px;
+}
+
+.footer-fab:hover {
+  color: white;
+}
+
