@@ -24,6 +24,7 @@
   width: 100%;
   height: 350px;
   object-fit: cover;
+  margin-bottom: 40px;
 }
 
 /* Styling the overlay which displays text over each project on hover */
