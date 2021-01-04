@@ -1,7 +1,7 @@
 /* Styling of the about container */
 #about {
   background: #73ac96;
-  color: #ccc;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +28,6 @@
 }
 #about p {
   line-height: 30px;
-  color: #ccc;
 }
 
 /* Hide profile pic on phone */
