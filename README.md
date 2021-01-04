@@ -2,7 +2,7 @@
 
 # About
 
-This website (https://www.rory-musinskas.com) is a reflection of my personality and a place for me to show off projects I am creating throughout my career. It is an update on my old portfolio (https://zealous-wing-31c1c0.netlify.app/).
+This website (https://www.rory-musinskas.com) is a place for me to show off projects I create throughout my career. It is an update on my old portfolio (https://zealous-wing-31c1c0.netlify.app/).
 
 # Tech used
 
