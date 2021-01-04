@@ -14,6 +14,7 @@ const Projects = () => {
           <a
             href="https://github.com/RoryMusinskas/flog-it-off"
             target="_blank"
+            rel="noreferrer"
           >
             <img className="project-image" src={flogItOff} alt="Flog-it-off" />
           </a>
@@ -29,6 +30,7 @@ const Projects = () => {
           <a
             href="https://github.com/RoryMusinskas/symbol-holic"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               className="project-image"
@@ -48,6 +50,7 @@ const Projects = () => {
           <a
             href="https://github.com/RoryMusinskas/portfolio-website"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               className="project-image"

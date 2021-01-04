@@ -34,6 +34,7 @@ const AboutArticle = () => {
                 }
                 className="button"
                 target="_blank"
+                rel="noreferrer"
                 download
               >
                 <i className="fa fa-download"></i>Download Resume
