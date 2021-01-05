@@ -1,0 +1,94 @@
+{
+  "header": {
+    "name": "Rory Musinskas",
+    "github": "https://github.com/RoryMusinskas"
+  },
+  "about": {
+    "blurb": "I have spent the last 8 years as a bush firefighter working around Australia. I am now making the transition to become a full stack developer with Coder Academy in Melbourne. I am learning HTML, CSS, Ruby, Rails and the MERN stack.",
+    "hobbies": ["Aviation", "Kiteboarding", "Camping", "Hiking"],
+    "resume": "https://drive.google.com/file/d/1asWCuamdyeveuia0bAjxUJLnHsdCF2KR/view?usp=sharing"
+  },
+  "employment": [
+    {
+      "employer": "Parks Victoria",
+      "title": "Field Service Officer - Fire and Emergency",
+      "years": "2016 - Current",
+      "description": [
+        "Respond to all classifications of bushfires on public land in Victoria and on occasion deployed interstate. I am accredited as a fireline crewleader, unimog operator and tree feller.",
+        "Operate plant and equipment to ensure maintenance of strategic bushfire management zones",
+        "Ensure individual and divisional goals are achieved and services are provided in an effective and timely manner.",
+        "Seek to understand stakeholder and customer needs to ensure fit for purpose solutions can be implemented."
+      ],
+      "class": "first-item"
+    },
+    {
+      "employer": "Parks Victoria",
+      "title": "Project Fire Fighter",
+      "years": "2012 - 2016",
+      "description": [
+        "Participation in bushfire suppression and planned burning operations via deployments for lengthy periods of time in remote bush locations.",
+        "Participation as a team member to ensure program objectives are met and that tasks are carried out safely.",
+        "Maintaining high levels of OH&S standards within the workplace."
+      ],
+      "class": "second-item"
+    }
+  ],
+  "education": [
+    {
+      "institute": "Coder Academy",
+      "course": "Full Stack Fast Track Bootcamp",
+      "years": "2020 - 2021",
+      "about": "HTML, CSS, Ruby, Ruby on Rails, MERN stack",
+      "class": "first-item"
+    },
+    {
+      "institute": "South Gippsland Secondary College",
+      "course": "VCE",
+      "years": "2007 - 2012",
+      "about": "Specialist Math, Math Methods, Further Math, Physics, English, Accounting",
+      "class": "second-item"
+    }
+  ],
+  "skills": [
+    {
+      "class": "fab fa-js fa-4x",
+      "title": "Javascript"
+    },
+    {
+      "class": "fab fa-react fa-4x",
+      "title": "React"
+    },
+    {
+      "class": "fas fa-gem fa-4x",
+      "title": "Ruby + Rails"
+    },
+    {
+      "class": "fab fa-html5 fa-4x",
+      "title": "HTML"
+    },
+    {
+      "class": "fab fa-css3-alt fa-4x",
+      "title": "CSS"
+    }
+  ],
+  "projects": [
+    {
+      "gitUrl": "https://github.com/RoryMusinskas/flog-it-off",
+      "name": "Flog-it-off",
+      "about": "A war on tradies waste",
+      "tech": "Written with Ruby on Rails"
+    },
+    {
+      "gitUrl": "https://github.com/RoryMusinskas/symbol-holic",
+      "name": "Symbol-Holic",
+      "about": "Improve symbol typing speed",
+      "tech": "A Ruby terminal app"
+    },
+    {
+      "gitUrl": "https://github.com/RoryMusinskas/portfolio-website",
+      "name": "First Portfolio",
+      "about": "First HTML/CSS portfolio",
+      "tech": "HTML/CSS"
+    }
+  ]
+}
