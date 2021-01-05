@@ -11,5 +11,6 @@ This website (https://www.rory-musinskas.com) is a place for me to show off proj
 
 # Learning goals
 
-1. To practise very basic react components.
-2. Consolidate and compare CSS skills compared to my first portfolio.
+1. To practise very basic react components. ✅
+2. Consolidate and compare CSS skills compared to my first portfolio. ✅
+3. (Extra) - Create stateful components and dynamically render elements from an external source (object or JSON file). ✅
