@@ -27,8 +27,8 @@ class Skills extends Component {
                     {job.title}: {job.years}
                   </h5>
                   <ul className="skills-list">
-                    {job.description.map((item) => {
-                      return <li>{item}</li>;
+                    {job.description.map((item, index) => {
+                      return <li key={index}>{item}</li>;
                     })}
                   </ul>
                 </div>
@@ -63,9 +63,9 @@ class Skills extends Component {
 
             <div className="first-item">
               <ul id="skills-icons">
-                {this.state.skills.map((skill) => {
+                {this.state.skills.map((skill, index) => {
                   return (
-                    <li>
+                    <li key={index}>
                       <i className={skill.class}></i>
                       <p>{skill.title}</p>
                     </li>

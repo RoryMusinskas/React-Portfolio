@@ -33,8 +33,8 @@ class Projects extends Component {
                 <div className="overlay">
                   <h1>{project.name}</h1>
                   <ul>
-                    <li>{project.about}</li>
-                    <li>{project.tech}</li>
+                    <li key={project.about}>{project.about}</li>
+                    <li key={project.tech}>{project.tech}</li>
                   </ul>
                 </div>
               </div>

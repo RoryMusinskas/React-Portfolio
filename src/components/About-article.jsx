@@ -25,7 +25,7 @@ class AboutArticle extends Component {
               <h2>Hobbies & Interests</h2>
               <ul id="hobby-list">
                 {this.state.hobbies.map((item) => {
-                  return <li>{item}</li>;
+                  return <li key={item}>{item}</li>;
                 })}
               </ul>
             </div>
